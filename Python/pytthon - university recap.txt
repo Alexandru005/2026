@@ -1,0 +1,110 @@
+type(var) -> tipul variabilei
+
+lamda x: x*x
+
+print()
+
+def nume_functie(parametrii):
+	...
+
+
+LISTE []
+===================
+
+Operatii pe liste:
++list(elemente lista)
++len(lista)
++lista[index1:index2] -> afiseaza elementele din intervalul [index1,index2)
++if elem in lista:
++append(elem)
++insert(index,elem)
++extend(elem)
++remove(elem)
++pop(index)
++del lista
++clear()
++sort() / sort(reverse = True) / sort(key = functie)
++reverse()
++copy()
++hex(id(lista[index])) -> afli adresa
+
+Operatii cu liste:
++lista3 = lista2 + lista1
++lista_noua = map(functie, lista)
++lamda x,y: x + y, lista1, lista2
++import functools
+ rez = reduce(functie, lista) //functia are 2 param
++lista_noua = filter(functie,lista)
+
+
+MULTIMI {}
+===================
+Operatii pe multimi:
++set()
++len()
++if(val_cauatata in multime):
++multime.add()
++multime1.update(multime2)
++multime.remove()
++multimer.clear()
++del multimer -> stergi complet variabila
+
+Operatii cu multimi:
++multimer3 = multime1.union(multime2)
++multimer3 = multime1.intersection(multime2)
++multimer3 = multime1.difference(multime2)
++multime1.issubset(multime2)
++multime1.isupperset(multime2)
++map()
++filter()
++import functools
+	reduce()
+
+
+
+
+DICTIONARE {cheie:valoare, ...}
+===============================
+
+Operatii pe dictionare:
++dict()
++get(cheie)
++keys()
++values()
++items()
++update()
++pop()
++clear()
++del dictionar
+
+
+TUPLURI ()
+====================
+
+Operatii pe tupluri
++len()
++tuplu = (elem,)
++tuplu = (2, 3)
+ a, b = tuplu
++
+
+
+
+GRAFURI
+graf = {
+   nod1 : {elem1, elem2},
+   nod2: {}...	
+}
+===========================
+
+Operatii pe graguri:
++graf.keys()
++graf.items()
+
+
+
+
+
+
+
+
