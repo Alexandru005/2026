@@ -1,0 +1,9 @@
+1. git clone + adrees HTTPS
+2. git add . 
+3. git commit -m + "message"
+4. git push
+5. git status
+6. git branch (shows in which branch are you) + name (create new branch)
+7. git switch + name (switch branch)
+8. git merge + name of the branch (only in main / add everything in main)
+
