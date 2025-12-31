@@ -43,16 +43,16 @@ Operatii pe multimi:
 +set()
 +len()
 +if(val_cauatata in multime):
-+multime.add()
++multime.add(elem)
 +multime1.update(multime2)
-+multime.remove()
-+multimer.clear()
++multime.remove(elem)
++multime.clear()
 +del multimer -> stergi complet variabila
 
 Operatii cu multimi:
-+multimer3 = multime1.union(multime2)
-+multimer3 = multime1.intersection(multime2)
-+multimer3 = multime1.difference(multime2)
++multime3 = multime1.union(multime2)
++multime3 = multime1.intersection(multime2)
++multime3 = multime1.difference(multime2)
 +multime1.issubset(multime2)
 +multime1.isupperset(multime2)
 +map()
@@ -97,10 +97,11 @@ graf = {
 }
 ===========================
 
-Operatii pe graguri:
-+graf.keys()
-+graf.items()
 
+
+EXTRA:
+a - string 
+sorted(a) - a is interpreted to be sorted
 
 
 
