@@ -1,2 +1,0 @@
-Here I will post small frontend programs!
-The objective is to stay consistent and don't forget how to work in frontend!
