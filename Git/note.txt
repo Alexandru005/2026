@@ -1,0 +1,2 @@
+Here I will post every comand I learn in Git!
+I will do all in terminal using WSL and GitKraken!

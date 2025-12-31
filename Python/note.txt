@@ -1,0 +1,3 @@
+Here I wil post every program I'll solve from LeetCode!
+I will post folders everyday which will include my work from that day!
+Every problem will have my solutions write in Python!
