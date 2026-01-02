@@ -1,0 +1,8 @@
+Pasi creare proiect
+===========================
+Pas1:npm create vite@latest
+Pas2:dai nume la fisier
+Pas3:accesezi fisierule
+Pas4:npm install
+Pas5:npm run dev
+

@@ -1,0 +1,22 @@
+.add-event{
+}
+
+.add-event input{
+    width: 80%;
+}
+
+.add-event button{
+    width: 15%;
+    height: 23px;
+    margin-left: 5px;
+    background-color: lightgreen;
+    box-shadow: 3px 3px 5px darkgreen;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-event button:hover{
+    background-color: green;
+    color: white;
+}
