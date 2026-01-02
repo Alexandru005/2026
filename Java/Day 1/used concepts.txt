@@ -1,0 +1,7 @@
+Classes
+Abstract classes
+Interfaces
+toString()
+equals()
+Inheritance
+Polimorphism

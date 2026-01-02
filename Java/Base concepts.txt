@@ -1,0 +1,5 @@
+1.Intelij Idea / Eclipse
+2.Java Memory
+3.Class / Obj / Inheritance / Interfaces (OOP)
+4.Data Structures (!!List / Maps)
+5.Testing (Unit / Mocking)
