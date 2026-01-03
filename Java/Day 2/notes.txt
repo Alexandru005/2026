@@ -1,0 +1,56 @@
+Data structures
+===============
+
+*Array*
+
+-Dimenisune fixa
+-Datele se pot accesa rapid (dupa index) - O(1)
+-Memorie compacta
+-Stergerile si Inserarile se fac greu (Trebuie mutate toate elementele)
+-Forma:
+[] [] []...
+
+*2D Array*
+-La fel ca la Array
+-Forma:
+[] [] []...
+[] [] []...
+.  .  .
+.  .  .
+.  .  .
+
+*Lists & ArrayLists*
+-Nu are dimensiune fixa
+-Elementele sunt imprastiate dpdv al memoriei
+-Stergerile si inserarile se fac usor
+-Elementele nu se acceseaza in O(1) - O(n)
+
+*Stack*
+-LIFO
+-methods: push, pop, peek
+
+*Queue*
+-FIFO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
