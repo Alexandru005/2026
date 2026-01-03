@@ -19,7 +19,7 @@ Data structures
 .  .  .
 .  .  .
 
-*Lists & ArrayLists*
+*List & ArrayList*
 -Nu are dimensiune fixa
 -Elementele sunt imprastiate dpdv al memoriei
 -Stergerile si inserarile se fac usor
@@ -31,6 +31,41 @@ Data structures
 
 *Queue*
 -FIFO
+
+*Linked List*
+-e format din noduri care au memorate adresa nodului urmator si precedent
+-consuma memorie
+
+*Set*
+-nu are duplicate
+
+*Map*
+-dictionare in python
+
+*Hash*
+-Hash function => hash code
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
