@@ -1,0 +1,30 @@
+RECAP PE PASI:
+
+//Creare proiect
+Pas1: creezi clasa Main
+Pas2: adaugi s-b-starter-web / s-b-devtools in pom.xml
+Pas3: creezi application.yml
+
+//Creare docker
+Pas4: creezi clasa de date
+Pas5: creezi docker-compose.yml
+Pas6: pornesti docker (desktop + yml)
+
+
+//Creare Baza de date
+Pas6: adaugi postgresql
+Pas7: modifici application.yml
+Pas8: docker ps -> extragi ce e la NAME -> docker exec -it NAME bash
+Pas9: psql -U username
+OBS: \l -> listeaza utilizatorii
+Pas10: CREATE DATABASE nameDatabase;
+
+//Creare clasa / interfata 
+Pas11:
+
+Pas12: \c nameDatabase
+
+Pas13: Main
+
+
+
