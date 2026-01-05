@@ -1,0 +1,13 @@
+In this tutorial I get in touch for the first time with Spring Boot
+Here I learn how to configure a project in Spring Boot
+Also I learn about dependencies and annotations
+At the end of the tutorial I learn how to create a Database in postgre and get/post/delete data
+
+Things I've used in this project:
+*Java / Spring Boot
+*Intelij Idea
+*Docker
+*Postgre
+*Postman
+*Maven
+*Git/Github
