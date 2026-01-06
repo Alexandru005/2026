@@ -6,8 +6,8 @@
 ## Backend (Java + Spring Boot)
 - [ ] Build REST APIs from scratch
 - [ ] Use Spring Security + JWT
-- [ ] Use PostgreSQL + JPA
-- [ ] Dockerize at least 1 backend
+- [x] Use PostgreSQL + JPA
+- [x] Dockerize at least 1 backend
 - [ ] Write tests for at least 1 project
 
 ## Frontend
