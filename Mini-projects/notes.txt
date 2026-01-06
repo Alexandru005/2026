@@ -1,0 +1,2 @@
+Here I post fullstack mini-projects
+Here I learn how connect frontend to backend

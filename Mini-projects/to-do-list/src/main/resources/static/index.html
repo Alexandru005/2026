@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>To-Do List</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+
+    <body class="bg-gray-100 min-h-screen p-8">
+
+        <div class="max-w-2xl mx-auto bg-white p-6 rounded-lg shadow-lg">
+            <h1 class="text-3xl font-bold mb-6 text-gray-800 border-b pb-2">Lista de Task-uri</h1>
+
+            <div class="flex flex-col gap-3 mb-8">
+                <input type="text" id="titlu" placeholder="Titlu task..."
+                       class="p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-400">
+                <textarea id="descriere" placeholder="Descriere task..."
+                          class="p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
+                <button onclick="addTask()"
+                        class="bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition font-semibold">
+                    + Adaugă Task
+                </button>
+            </div>
+
+            <div id="lista-taskuri" class="space-y-4">
+                <p class="text-gray-500 italic">Se încarcă task-urile...</p>
+            </div>
+        </div>
+
+        <script>
+            const API_URL = "http://localhost:8080";
+
+            // Functia care aduce task-urile
+            async function loadTasks() {
+                try {
+                    const response = await fetch(`${API_URL}/tasks`);
+                    const tasks = await response.json();
+
+                    const container = document.getElementById('lista-taskuri');
+                    container.innerHTML = "";
+
+                    if (tasks.length === 0) {
+                        container.innerHTML = '<p class="text-gray-400">Niciun task momentan.</p>';
+                        return;
+                    }
+
+                    tasks.forEach(task => {
+                        container.innerHTML += `
+                                <div class="flex justify-between items-start p-4 bg-gray-50 border rounded-md hover:shadow-sm transition">
+                                    <div>
+                                        <h3 class="font-bold text-lg text-blue-900">${task.titlu}</h3>
+                                        <p class="text-gray-600">${task.descriere || 'Fără descriere'}</p>
+                                    </div>
+                                    <button onclick="deleteTask(${task.id})"
+                                        class="text-red-500 hover:text-red-700 font-bold px-2 py-1">
+                                        Șterge
+                                    </button>
+                                </div>
+                            `;
+                    });
+                } catch (err) {
+                    console.error("Eroare la incarcare:", err);
+                }
+            }
+
+            // Functia care salveaza un task
+            async function addTask() {
+                const titluInput = document.getElementById('titlu');
+                const descInput = document.getElementById('descriere');
+
+                if (!titluInput.value) return alert("Titlul este obligatoriu!");
+
+                const taskData = {
+                    titlu: titluInput.value,
+                    descriere: descInput.value
+                };
+
+                await fetch(`${API_URL}/add-task`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(taskData)
+                });
+
+                // Resetam inputurile si reincarcam lista
+                titluInput.value = "";
+                descInput.value = "";
+                loadTasks();
+            }
+
+            // Functia de stergere
+            async function deleteTask(id) {
+                if (confirm("Sigur vrei să ștergi acest task?")) {
+                    await fetch(`${API_URL}/delete/${id}`, { method: 'DELETE' });
+                    loadTasks();
+                }
+            }
+
+            // Initializare
+            loadTasks();
+        </script>
+    </body>
+</html>
