@@ -34,7 +34,7 @@
 - [ ] Deployed
 
 ## Optional
-- [ ] Learn about AWS
+- [ ] Learn about Azure
 
 ## Final Check
 - [ ] At least 2 projects fully completed
